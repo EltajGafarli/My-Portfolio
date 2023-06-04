@@ -40,3 +40,45 @@ const sendMail = () => {
 
 
 contact.addEventListener('click', sendMail);
+
+
+//links
+
+let employee = document.getElementById("employee");
+
+let calculator = document.getElementById("det-calculator");
+
+let blog = document.getElementById("blog");
+
+let spotify = document.getElementById("spotify");
+
+let meladora = document.getElementById("meladora");
+
+let sorting = document.getElementById("sorting");
+
+
+employee.addEventListener('click', function() {
+    window.open("https://github.com/EltajGafarli/EmployeeManagement", "_blank");
+});
+
+calculator.addEventListener('click', function() {
+    window.open("https://github.com/EltajGafarli/DeterminantCalculator", "_blank")
+})
+
+blog.addEventListener('click', function() {
+    window.open("https://github.com/EltajGafarli/blog-app-flask", "_blank")
+})
+
+
+spotify.addEventListener('click', function() {
+    window.open("https://github.com/EltajGafarli/spotify-music-recommender", "_blank")
+})
+
+meladora.addEventListener('click', function() {
+    window.open("https://github.com/EltajGafarli/meladora", "_blank")
+})
+
+
+sorting.addEventListener('click', function() {
+    window.open("https://github.com/EltajGafarli/illustration-of-sorting-algorithms", "_blank")
+})
