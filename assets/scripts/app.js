@@ -8,6 +8,7 @@ let skillsbutton = document.getElementById("skill-button");
 let project = document.getElementById("project");
 let skills = document.getElementById("skills");
 
+let contact = document.getElementById("contact");
 
 projectbutton.addEventListener('click', function() {
 
@@ -27,3 +28,15 @@ skillsbutton.addEventListener('click', function() {
     skillsbutton.style.backgroundColor = "#0c151d";
     projectbutton.style.backgroundColor = "#171f26";
 })
+
+const sendMail = () => {
+    const emailAddress = "eltajgafarli@mail.ru";
+    const emailSubject = "Portfolio Mail";
+    const emailBody = "Replace this text with the desired email body content";
+    const encodedSubject = encodeURIComponent(emailSubject);
+    const encodedBody = encodeURIComponent(emailBody);
+    window.location.href = `mailto:${emailAddress}?subject=${encodedSubject}&body=${encodedBody}`;
+};
+
+
+contact.addEventListener('click', sendMail);
